@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Deeplinking | Tabs</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+  <style>body { padding: 2rem; }</style>
+</head>
+<body>
+  <ul class="tabs" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge="500" data-tabs id="deeplinked-tabs">
+    <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+    <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
+    <li class="tabs-title"><a href="#panel3">Tab 3</a></li>
+    <li class="tabs-title"><a href="#panel4">Tab 4</a></li>
+    <li class="tabs-title"><a href="#panel5">Tab 5</a></li>
+    <li class="tabs-title"><a href="#panel6">Tab 6</a></li>
+  </ul>
+
+  <div class="tabs-content" data-tabs-content="deeplinked-tabs">
+    <div class="tabs-panel is-active" id="panel1">
+      <p>One</p>
+      <p>Check me out! I'm a super cool Tab panel with text content!</p>
+    </div>
+    <div class="tabs-panel" id="panel2">
+      <p>Two</p>
+      <img class="thumbnail" src="//foundation.zurb.com/sites/docs/assets/img/generic/rectangle-7.jpg">
+    </div>
+    <div class="tabs-panel" id="panel3">
+      <p>Three</p>
+      <p>Check me out! I'm a super cool Tab panel with text content!</p>
+    </div>
+    <div class="tabs-panel" id="panel4">
+      <p>Four</p>
+      <img class="thumbnail" src="//foundation.zurb.com/sites/docs/assets/img/generic/rectangle-2.jpg">
+    </div>
+    <div class="tabs-panel" id="panel5">
+      <p>Five</p>
+      <p>Check me out! I'm a super cool Tab panel with text content!</p>
+    </div>
+    <div class="tabs-panel" id="panel6">
+      <p>Six</p>
+      <img class="thumbnail" src="//foundation.zurb.com/sites/docs/assets/img/generic/rectangle-8.jpg">
+    </div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/2.1.1/what-input.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+  <script>$(document).foundation();</script>
+</body>
+</html>
